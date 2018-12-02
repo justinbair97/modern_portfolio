@@ -2,8 +2,8 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 30px;
+  top: 30px;
   cursor: pointer;
   @include easeOut;
 
@@ -23,6 +23,7 @@
       // Line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
+        background: rgb(92, 12, 184);
       }
 
       // Line 2 - Hide
@@ -33,6 +34,7 @@
       // Line 3 - Rotate
       &:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
+        background: rgb(92, 12, 184);
       }
     }
   }
