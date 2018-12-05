@@ -66,7 +66,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: rgba(darken($primary-color, 5), 0.95);
+    background: rgba(darken($primary-color, 4), 0.95);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -86,14 +86,6 @@
     &.show {
       // Slide In From Bottom
       transform: translate3d(0, 0, 0);
-    }
-
-    .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/portrait.jpg");
-      border-radius: 50%;
-      border: solid 3px $secondary-color;
     }
   }
 
@@ -128,7 +120,7 @@
   }
 }
 
-// Delay Each Nav Item Slide By 0.1s
+// Delay Each Nav Item Slide By 0.1sec
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;

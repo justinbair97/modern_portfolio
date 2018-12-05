@@ -47,9 +47,13 @@ header {
 }
 
 main {
-  padding: 4rem;
+  padding: 1rem 4rem;
   //  height: 100%;
   min-height: calc(100vh - 60px);
+
+  h2 {
+    font-size: 2rem;
+  }
 
   .icons {
     margin-top: 1rem;
@@ -76,32 +80,44 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
+    "bio bio bio"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
-
-  .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-  }
 
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+
+    h3 {
+      font-size: 2.5rem;
+    }
   }
 
   .job-1 {
     grid-area: job1;
+
+    h3 {
+      font-size: 2rem;
+      color: $secondary-color;
+    }
   }
 
   .job-2 {
     grid-area: job2;
+
+    h3 {
+      font-size: 2rem;
+      color: $secondary-color;
+    }
   }
 
   .job-3 {
     grid-area: job3;
+
+    h3 {
+      font-size: 2rem;
+      color: $secondary-color;
+    }
   }
 
   .job {
@@ -138,9 +154,9 @@ main {
   margin-top: 1rem;
 
   div {
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 1.5rem;
     margin-bottom: 3rem;
     @include easeOut;
 
@@ -182,7 +198,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
+  background: darken($primary-color, 20);
   color: set-text-color($primary-color);
   height: 60px;
 }
